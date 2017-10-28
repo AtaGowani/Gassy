@@ -1,0 +1,26 @@
+{
+  "name": "gassy",
+  "version": "0.0.1",
+  "description": "TO BE EDITED",
+  "main": "N/A",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtaGowani/Gassy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtaGowani/Gassy/issues"
+  },
+  "homepage": "https://github.com/AtaGowani/Gassy#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.12.6",
+    "webpack": "^3.8.1"
+  }
+}
