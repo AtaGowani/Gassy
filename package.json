@@ -1,7 +1,7 @@
 {
   "name": "gassy",
   "version": "1.0.0",
-  "description": "",
+  "description": "hackathon project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AtaGowani/Gassy/issues"
   },
-  "homepage": "https://github.com/AtaGowani/Gassy#readme"
+  "homepage": "https://github.com/AtaGowani/Gassy#readme",
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
 }
