@@ -71,23 +71,23 @@
             </div>
   
             <div class="results" ng-if="result_ready">
-              <div ng-if="first_quarter > 0" class="progress">
+              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="first_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25% - ${{first_quarter}}</div>
               </div>
-              <div ng-if="second_quarter > 0" class="progress">
+              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="second_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50% - ${{second_quarter}}</div>
               </div>
-              <div ng-if="third_quarter > 0" class="progress">
+              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="third_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75% - ${{third_quarter}}</div>
               </div>
-              <div ng-if="fourth_quarter > 0" class="progress">
+              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="fourth_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100% - ${{fourth_quarter}}</div>
               </div>
-              <div ng-if="current_percent >= '0' || current_percent <= '100'" class="text-center" style="color: #000">
+              <div ng-if="current_percent >= '0' && current_percent <= '100'" class="text-center" style="color: #000">
                 Your Current Tank:
               </div>
               <div class="progress">
-                <div class="progress-bar" ng-if="current_percent >= '0' || current_percent <= '100'" ng-class="{'bg-danger': current_percent < 25, 'bg-warning': current_percent < 50, 'bg-success': current_percent > 50}" role="progressbar" style="width: {{current_percent}}%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{current_percent}}%</div>
+                <div class="progress-bar" ng-if="current_percent >= '0' && current_percent <= '100'" ng-class="{'bg-danger': current_percent < 25, 'bg-warning': current_percent < 50, 'bg-success': current_percent > 50}" role="progressbar" style="width: {{current_percent}}%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">{{current_percent}}%</div>
               </div>
               <div  ng-if="current_percent < 0 || current_percent > 100" class="alert alert-danger" role="alert">
                 <strong>Oh snap!</strong> Change a few things up and try submitting again.
