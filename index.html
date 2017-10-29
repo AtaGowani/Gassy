@@ -9,7 +9,12 @@
         <option ng-repeat="car in cars">{{car.make}}</option>
       </select>
       <input type="number" ng-model="user_mpg">
-      <button ng-click="gallonsToFill(userCar, user_mpg)">
+      <select ng-model="gasType">
+        <option>Midgrade</option>
+        <option>Premium</option>
+        <option>Regular</option>
+      </select>
+      <button ng-click="getPrice(userCar, user_mpg, gasType)">
         Go!
       </button>
       <div>

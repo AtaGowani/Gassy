@@ -20,7 +20,7 @@ app.controller('InputController', ['$scope', '$log', '$http', function($scope, $
     console.log("ERROR:" + response);
   });
 
-  $scope.gallonsToFill = function(Car, CrusingRange) {
+  $scope.getPrice = function(Car, CrusingRange) {
     var THEcar = [];
     $scope.cars.forEach(function(car) {
       if (car.make === Car) {
