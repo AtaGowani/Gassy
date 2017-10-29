@@ -36,6 +36,40 @@ app.controller('InputController', ['$scope', '$log', '$http', function($scope, $
     console.log("ERROR:" + response);
   });
 
+  $scope.refresh = function () {
+    $scope.cars = []
+    $scope.result_final = {};
+    $scope.userCar = "";
+    $scope.gasPrices = {};
+    $scope.result_ready = false;
+    $scope.first_quarter = 0;
+    $scope.second_quarter = 0;
+    $scope.third_quarter = 0;
+    $scope.fourth_quarter = 0;
+
+    // Request to get the cars
+    $http({
+      method: 'GET',
+      url: './src/data/carData.json'
+    }).then(function successCallback(response) {
+      response.data.Cars.forEach(function(car) {
+        $scope.cars.push(car);
+      }, this);
+    }, function errorCallback(response) {
+      console.log("ERROR:" + response);
+    });
+
+    // Request to get the gas prices
+    $http({
+      method: 'GET',
+      url: 'http://www.fueleconomy.gov/ws/rest/fuelprices'
+    }).then(function successCallback(response) {
+      $scope.gasPrices = response.data;
+    }, function errorCallback(response) {
+      console.log("ERROR:" + response);
+    });
+  }
+
   $scope.getPrice = function(Car, CrusingRange, gasType) {
     $scope.crusing_range = CrusingRange;
     var the_car = [];
