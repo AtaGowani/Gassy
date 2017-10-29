@@ -71,16 +71,17 @@
             </div>
   
             <div class="results" ng-if="result_ready">
-              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="first_quarter > 0" class="progress">
+              <div class="text-center"><b>National Average:</b> {{national_average}}</div>
+              <div ng-if="first_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25% - ${{first_quarter}}</div>
               </div>
-              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="second_quarter > 0" class="progress">
+              <div ng-if="second_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50% - ${{second_quarter}}</div>
               </div>
-              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="third_quarter > 0" class="progress">
+              <div ng-if="third_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75% - ${{third_quarter}}</div>
               </div>
-              <div ng-if="current_percent >= '0' && current_percent <= '100'" ng-if="fourth_quarter > 0" class="progress">
+              <div ng-if="fourth_quarter > 0" class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100% - ${{fourth_quarter}}</div>
               </div>
               <div ng-if="current_percent >= '0' && current_percent <= '100'" class="text-center" style="color: #000">

@@ -13,6 +13,7 @@ app.controller('InputController', ['$scope', '$log', '$http', function($scope, $
   $scope.second_quarter = 0;
   $scope.third_quarter = 0;
   $scope.fourth_quarter = 0;
+  $scope.national_average = 40;
 
   // Request to get the cars
   $http({
@@ -75,6 +76,7 @@ app.controller('InputController', ['$scope', '$log', '$http', function($scope, $
     var the_car = [];
     var price_for_type = $scope.gasPrices[gasType.toLowerCase()];
     console.log(price_for_type);
+    $scope.national_average = price_for_type;
     $scope.cars.forEach(function(car) {
       if (car.make === Car) {
         the_car.push(car);
