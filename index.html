@@ -26,15 +26,15 @@
       <form class = "myform" ng-if = "!result_ready">
 
           <div ng-controller="InputController">
-            <label><b>Car Make:</label><br>
+            <label><b>Car Make:</b></label><br>
             <select class = "inputvalues" ng-model="userCar">
               <option ng-repeat="car in cars">{{car.make}}</option>
             </select><br>
 
-  			<label><b>Current Cruising Range:</label><br>
+  			<label><b>Current Cruising Range:</b></label><br>
   			<input type="number" class = "inputvalues" ng-model="user_mpg" placeholder="Enter cruising range"><br>
 
-        <label><b>Gas Type:</label><br>
+        <label><b>Gas Type:</b></label><br>
         <select class = "inputvalues" ng-model="gasType">
           <option>Midgrade</option>
           <option>Premium</option>
