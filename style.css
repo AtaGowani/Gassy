@@ -23,22 +23,31 @@ div.background {
   width: 100%;
   background-image: url("./src/imgs/background.jpg");
   background-size: cover;
+<<<<<<< HEAD
+  height: 500px;
+=======
   filter: blur(3px);
+>>>>>>> e76ff5c5f35893209b03477aef91d910db0c5064
 }
 
 .box {
   background: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   border: 2px 0 black;
 }
 
+<<<<<<< HEAD
+.container-fluid h1 {
+  font-style: oblique;
+=======
 .container {
   padding-top: 120px;
   margin: 0 auto;
 }
 
 .container h1 {
+>>>>>>> e76ff5c5f35893209b03477aef91d910db0c5064
   padding-bottom: 5px;
   font-weight: bold;
 }
