@@ -25,7 +25,7 @@ div.background {
   right: 0;
   height: 100%;
   width: 100%;
-  background-image: url("./src/imgs/background.jpg");
+  background-image: url("imgs/background.jpg");
   background-size: cover;
   filter: blur(4px);
 }
@@ -40,6 +40,7 @@ div.background {
 .container {
   padding-top: 100px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .container h1 {
@@ -59,4 +60,19 @@ div.background {
 
 .myform .inputvalues {
   margin-bottom: 10px;
+}
+
+@media (max-width: 414px) {
+  div.container {
+    height: 100%;
+    padding-top: 0px;
+  }
+
+  .box {
+    height: 100%;
+  }
+
+  .row {
+    height: 100%;
+  }
 }
