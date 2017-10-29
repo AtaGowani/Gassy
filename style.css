@@ -23,7 +23,7 @@ div.background {
   width: 100%;
   background-image: url("./src/imgs/background.jpg");
   background-size: cover;
-  filter: blur(3px);
+  filter: blur(4px);
 }
 
 .box {
