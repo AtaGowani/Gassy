@@ -37,6 +37,7 @@ app.controller('InputController', ['$scope', '$log', '$http', function($scope, $
   });
 
   $scope.getPrice = function(Car, CrusingRange, gasType) {
+    $scope.crusing_range = CrusingRange;
     var the_car = [];
     var price_for_type = $scope.gasPrices[gasType.toLowerCase()];
     console.log(price_for_type);

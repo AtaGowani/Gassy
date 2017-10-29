@@ -46,11 +46,22 @@
           </div>
         </div>
 
-        <div class="results" ng-if = "result_ready">
-          <p>Up to 25% : ${{first_quarter}}</p>
-          <p>Up to 50% : ${{second_quarter}}</p>
-          <p>Up to 75% : ${{third_quarter}}</p>
-          <p>Up to 100% : ${{fourth_quarter}}</p>
+        <div class="results" ng-if="result_ready">
+          <div ng-if="first_quarter > 0" class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25% - ${{first_quarter}}</div>
+          </div>
+          <div ng-if="second_quarter > 0" class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50% - ${{second_quarter}}</div>
+          </div>
+          <div ng-if="third_quarter > 0" class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75% - ${{third_quarter}}</div>
+          </div>
+          <div ng-if="fourth_quarter > 0" class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100% - ${{fourth_quarter}}</div>
+          </div>
+          <div class="text-center" style="color: #000">
+            Your Current Crusing Range: {{crusing_range}}
+          </div>
         </div>
       </div>
     </div>

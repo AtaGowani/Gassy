@@ -5,6 +5,10 @@ h1 {
   font-size: 3rem;
 }
 
+.results .progress {
+  margin-bottom: 3rem;
+}
+
 body {
   background-image: url("background.jpg");
   background-size: cover;
