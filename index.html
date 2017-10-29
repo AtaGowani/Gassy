@@ -27,7 +27,7 @@
 
           <div class="form-group">
             <label><b>Current Cruising Range</b></label>
-            <input type="number" class="form-control" ng-model="user_mpg" placeholder="Enter cruising range">
+            <input type="number" class="form-control" ng-model="crusing_range" placeholder="Enter cruising range">
           </div>
 
           <div class="form-group">
@@ -41,7 +41,7 @@
           
           <div class="form-group">
             <div class="text-center">
-              <button type="submit" class="btn btn-primary">Calculate</button>
+              <button type="submit" class="btn btn-primary" ng-click="getPrice(userCar, crusing_range, gasType)">Calculate</button>
             </div>
           </div>
         </div>
