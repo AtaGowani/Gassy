@@ -82,6 +82,7 @@ app.controller('InputController', ['$scope', '$log', '$http', function($scope, $
     }, this);
 
     var max_miles = the_car[0].mpg * the_car[0].fuel_capacity;
+    $scope.current_percent = Math.ceil((CrusingRange / max_miles) * 100);
     
     $scope.result_ready = true;
     var miles_used_percentile = (miles_used / max_miles) * 100;
