@@ -1,24 +1,86 @@
 {
   "Cars":[
     {
+      "make": "Toyota Camry 2017",
+      "mpg": "24",
+      "fuel_capacity": "17"
+    },
+    {
+      "make": "Toyota Camry 2016",
+      "mpg": "25",
+      "fuel_capacity": "17"
+    },
+    {
       "make": "Toyota Camry 2015",
-      "mpg": "50",
-      "fuel_capacity": "17.7"
+      "mpg": "25",
+      "fuel_capacity": "17"
     },
     {
-      "make": "Toyota Camry 2013",
-      "mpg": "50",
-      "fuel_capacity": "17.7"
+      "make": "Honda Accord 2017",
+      "mpg": "27",
+      "fuel_capacity": "17.2"
     },
     {
-      "make": "Honda Accord 2013",
-      "mpg": "53",
-      "fuel_capacity": "17.9"
+      "make": "Honda Accord 2016",
+      "mpg": "27",
+      "fuel_capacity": "17.2"
     },
     {
       "make": "Honda Accord 2015",
-      "mpg": "53",
-      "fuel_capacity": "17.9"
+      "mpg": "27",
+      "fuel_capacity": "17.2"
+    },
+    {
+      "make": "Mercedes S 550 2017",
+      "mpg": "18",
+      "fuel_capacity": "21.1"
+    },
+    {
+      "make": "Mercedes S 550 2016",
+      "mpg": "17",
+      "fuel_capacity": "21.1"
+    },
+    {
+      "make": "Mercedes S 550 2015",
+      "mpg": "17",
+      "fuel_capacity": "21.1"
+    },
+    {
+      "make": "Lexus GS 350 2017",
+      "mpg": "20",
+      "fuel_capacity": "17.4"
+    },
+    {
+      "make": "Lexus GS 350 2016",
+      "mpg": "20",
+      "fuel_capacity": "17.4"
+    },
+    {
+      "make": "Lexus GS 350 2015",
+      "mpg": "19",
+      "fuel_capacity": "17.4"
+    },
+    {
+      "make": "BMW 530i 2017",
+      "mpg": "24",
+      "fuel_capacity": "18"
+    },
+    {
+      "make": "Infinti Q 60 2017",
+      "mpg": "22",
+      "fuel_capacity": "20"
+    },
+    {
+      "make": "Rolls-Royce Ghost 2017",
+      "mpg": "12",
+      "fuel_capacity": "21.8"
+    },
+    {
+      "make": "Bently Continental GT 2017",
+      "mpg": "15",
+      "fuel_capacity": "24"
     }
+    
+    
   ]
 }
