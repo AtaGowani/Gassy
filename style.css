@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
@@ -9,21 +15,30 @@ h1 {
   margin-bottom: 3rem;
 }
 
-body {
-  background-image: url("background.jpg");
+div.background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("./src/imgs/background.jpg");
   background-size: cover;
+  filter: blur(3px);
 }
 
-.container-fluid {
-  width: 500px;
-  margin-top: 150px;
+.box {
   background: white;
   padding: 20px;
   border-radius: 10px;
   border: 2px 0 black;
 }
 
-.container-fluid h1 {
+.container {
+  padding-top: 120px;
+  margin: 0 auto;
+}
+
+.container h1 {
   padding-bottom: 5px;
   font-weight: bold;
 }
