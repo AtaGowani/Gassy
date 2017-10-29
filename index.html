@@ -2,55 +2,58 @@
 <html lang="en" ng-app="GassyApp">
 
   <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="src/js/controller.js"></script>
-
     <title> GassyApp </title>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet">
-
   </head>
-
   <body>
-
     <div class="container-fluid">
       <center><h1>Gassy</h1></center>
 
-      <form class = "myform" ng-if = "!result_ready">
-
-          <div ng-controller="InputController">
-            <label><b>Car Make:</b></label><br>
-            <select class = "inputvalues" ng-model="userCar">
+      <div ng-controller="InputController">
+        <div class="myform" ng-if="!result_ready">
+          <div class="form-group">
+            <label><b>Car Make</b></label>
+            <select class="form-control" ng-model="userCar">
               <option ng-repeat="car in cars">{{car.make}}</option>
-            </select><br>
+            </select>
+          </div>
 
-  			<label><b>Current Cruising Range:</b></label><br>
-  			<input type="number" class = "inputvalues" ng-model="user_mpg" placeholder="Enter cruising range"><br>
+          <div class="form-group">
+            <label><b>Current Cruising Range</b></label>
+            <input type="number" class="form-control" ng-model="user_mpg" placeholder="Enter cruising range">
+          </div>
 
-        <label><b>Gas Type:</b></label><br>
-        <select class = "inputvalues" ng-model="gasType">
-          <option>Midgrade</option>
-          <option>Premium</option>
-          <option>Regular</option>
-        </select><br>
+          <div class="form-group">
+            <label><b>Gas Type</b></label>
+            <select class="form-control" ng-model="gasType">
+              <option>Midgrade</option>
+              <option>Premium</option>
+              <option>Regular</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+        </div>
 
-  			<input type="submit" id = "calculate_btn" ng-click="getPrice(userCar, user_mpg, gasType)" value = "Calculate"><br>
-  	  </form>
-
-      <div class="results" ng-if = "result_ready">
-
+        <div class="results" ng-if = "result_ready">
+          <p>Up to 25% : ${{first_quarter}}</p>
+          <p>Up to 50% : ${{second_quarter}}</p>
+          <p>Up to 75% : ${{third_quarter}}</p>
+          <p>Up to 100% : ${{fourth_quarter}}</p>
+        </div>
       </div>
-
-       </div>
     </div>
-
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
